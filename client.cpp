@@ -3,25 +3,15 @@
 #include <fstream>
 #include <opencv2/opencv_modules.hpp>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 using namespace std;
 
 
 
 
-void handler(const boost::system::error_code& error, size_t bytes_transferred);
+
+
+
+
 
 int main() {
     boost::asio::io_service io_service; // Servicio de input/output
