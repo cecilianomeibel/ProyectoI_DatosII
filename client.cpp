@@ -7,8 +7,64 @@
 #include <opencv2/core.hpp>
 
 
-
 using namespace std;
+
+
+//Segmentacion de la imagen
+
+int divideImage(const cv::Mat& img, const int blockWidth, const int blockHeight, std::vector<cv::Mat>& blocks)
+{
+    // Checking if the image was passed correctly
+    if (!img.data || img.empty())
+    {
+        std::cout << "Image Error: Cannot load image to divide." << std::endl;
+        return EXIT_FAILURE;
+    }
+
+    // init image dimensions
+    int imgWidth = img.cols;
+    int imgHeight = img.rows;
+    std::cout << "IMAGE SIZE: " << "(" << imgWidth << "," << imgHeight << ")" << std::endl;
+
+    // init block dimensions
+    int bwSize;
+    int bhSize;
+
+    int y0 = 0;
+    while (y0 < imgHeight)
+    {
+        // compute the block height
+        bhSize = ((y0 + blockHeight) > imgHeight) * (blockHeight - (y0 + blockHeight - imgHeight)) + ((y0 + blockHeight) <= imgHeight) * blockHeight;
+
+        int x0 = 0;
+        while (x0 < imgWidth)
+        {
+            // compute the block witdh
+            bwSize = ((x0 + blockWidth) > imgWidth) * (blockWidth - (x0 + blockWidth - imgWidth)) + ((x0 + blockWidth) <= imgWidth) * blockWidth;
+
+            // crop block
+            blocks.push_back(img(cv::Rect(x0, y0, bwSize, bhSize)).clone());
+
+            // update x-coordinate
+            x0 = x0 + blockWidth;
+        }
+
+        // update y-coordinate
+        y0 = y0 + blockHeight;
+    }
+    return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 int main() {
