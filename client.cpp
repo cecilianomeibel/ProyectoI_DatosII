@@ -151,8 +151,8 @@ int main() {
         cin.get(); // wait for any key press
         return -1;
     }
-imshow("ImageWindow", image);
-waitKey(0);
+   // imshow("ImageWindow", image);
+    //waitKey(0);
 
 //Segmentar la imagen
 
@@ -161,15 +161,16 @@ waitKey(0);
     const int blockh = 128;
     std::vector<cv::Mat> blocks;
     int divideStatus = divideImage(image, blockw, blockh, blocks);
-// debug: save blocks
-/*
-cv::utils::fs::createDirectory("blocksFolder");
-for (int j = 0; j < blocks.size(); j++)
-{
+    //Crea una carpeta con los segmentos
+    cv::utils::fs::createDirectory("blocksFolder");
+
+    for (int j = 0; j < blocks.size(); j++)
+    {
     std::string blockId = std::to_string(j);
     std::string blockImgName = "blocksFolder/block#" + blockId + ".jpeg";
     imwrite(blockImgName, blocks[j]);
-}*/
+    }
+
 
 //Socket
 

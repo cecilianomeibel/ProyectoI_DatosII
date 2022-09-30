@@ -4,7 +4,6 @@
 #include <fstream>
 #include <opencv2/core/utils/filesystem.hpp>
 #include "opencv2/imgcodecs.hpp"
-#include "opencv2/stitching.hpp"
 #include <opencv2/core.hpp>
 #include <boost/serialization/split_free.hpp>
 #include <boost/archive/text_iarchive.hpp>
