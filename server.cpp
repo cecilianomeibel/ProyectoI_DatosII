@@ -4,7 +4,6 @@
 using namespace std;
 
 
-//This is a try
 /**
  *
  * Funcion que lee mensaje enviado por cliente
@@ -19,6 +18,7 @@ string ReadMessage(boost::asio::ip::tcp::socket & socket) {
     return data; // Retorna el mensaje recibido
 }
 
+
 /**
  *
  * Funcion que envia mensaje al cliente
@@ -30,6 +30,8 @@ void SendMessage(boost::asio::ip::tcp::socket & socket, const string& message) {
     const string msg = message + "\n"; // Declara variable string con un delimitador linea siguiente
     boost::asio::write( socket, boost::asio::buffer(message)); // Envia mensaje a cliente mediante buffer
 }
+
+
 
 int main() {
     boost::asio::io_service io_service; // Servicio de input/output

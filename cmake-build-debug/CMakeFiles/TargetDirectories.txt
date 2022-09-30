@@ -1,0 +1,4 @@
+/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII/cmake-build-debug/CMakeFiles/Server.dir
+/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII/cmake-build-debug/CMakeFiles/Client.dir
+/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,22 +1,49 @@
 #include <iostream>
 #include <boost/asio.hpp>
+#include <fstream>
+#include <opencv2/opencv_modules.hpp>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 using namespace std;
+
+
+
+
+void handler(const boost::system::error_code& error, size_t bytes_transferred);
+
 int main() {
     boost::asio::io_service io_service; // Servicio de input/output
     boost::asio::ip::tcp::socket socket(io_service); // Declaracion de socket para conexiones
     boost::system::error_code error; // Variable para codigo de error especifico de Boost
     boost::asio::streambuf receive_buffer; // Buffer para recibir mensajes
     const string outMessage = "Hola, soy el cliente\n"; // Mensaje a enviar
+    
+    ofstream txtFile("imageBin.txt");
+
+
 
     socket.connect(boost::asio::ip::tcp::endpoint( boost::asio::ip::address::from_string("127.0.0.1"), 1234));
                                                                        // Conecta socket a IP local con puerto del servidor
     cout << "Conectado al servidor" << endl;
 
-    boost::asio::write(socket, boost::asio::buffer(outMessage), error ); // Escribe mensaje al servidor
+    boost::asio::write(socket, boost::asio::buffer(outMessage), error ); // Escribe mensaje al servido
+
 
     if(!error) {
         cout << "Mensaje enviado" << endl;
+        
     }
     else {
         cout << "error" << error.message() << endl;
