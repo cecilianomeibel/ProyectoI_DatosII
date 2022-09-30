@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/meibel/Documentos/ProyectoI_DatosII/Image_processing.cpp" "CMakeFiles/Image_processing.dir/Image_processing.cpp.o" "gcc" "CMakeFiles/Image_processing.dir/Image_processing.cpp.o.d"
+  "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master/Image_processing.cpp" "CMakeFiles/Image_processing.dir/Image_processing.cpp.o" "gcc" "CMakeFiles/Image_processing.dir/Image_processing.cpp.o.d"
   )
 
 # Targets to which this target links.

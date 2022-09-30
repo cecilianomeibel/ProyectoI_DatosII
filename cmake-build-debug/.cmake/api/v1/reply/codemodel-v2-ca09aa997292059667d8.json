@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug",
-		"source" : "/home/meibel/Documentos/ProyectoI_DatosII"
+		"build" : "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master/cmake-build-debug",
+		"source" : "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master"
 	},
 	"version" : 
 	{

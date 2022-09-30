@@ -178,6 +178,11 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/boost/asio.hpp \
   /usr/include/boost/asio/associated_allocator.hpp \
   /usr/include/boost/asio/detail/config.hpp \
@@ -1284,7 +1289,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
   /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/c++/11/bits/quoted_string.h \
@@ -1334,10 +1338,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
   /usr/local/include/opencv4/opencv2/video.hpp \
   /usr/local/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
-  /usr/include/c++/11/fstream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc \
   /usr/local/include/opencv4/opencv2/core/utils/filesystem.hpp \
   /usr/include/boost/serialization/split_free.hpp \
   /usr/include/boost/serialization/serialization.hpp \
@@ -1726,14 +1726,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/serialization/serialization.hpp:
 
-/usr/include/boost/mpl/aux_/na_assert.hpp:
-
-/usr/include/c++/11/bits/fstream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
-
-/usr/include/c++/11/fstream:
-
 /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
 
 /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
@@ -1791,8 +1783,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/local/include/opencv4/opencv2/flann/index_testing.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
-
-/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/boost/type_traits/is_reference.hpp:
 
@@ -2282,10 +2272,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/asio/detail/base_from_completion_cond.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
-
-/usr/include/boost/asio/write.hpp:
-
 /usr/local/include/opencv4/opencv2/core/matx.hpp:
 
 /usr/include/boost/asio/completion_condition.hpp:
@@ -2428,7 +2414,13 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/mpl/times.hpp:
 
-/usr/include/boost/asio/detail/executor_op.hpp:
+/usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
+
+/usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:
+
+/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
+
+/usr/include/boost/mpl/integral_c_fwd.hpp:
 
 /usr/include/boost/config/workaround.hpp:
 
@@ -2461,12 +2453,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
-
-/usr/include/boost/predef/os/bsd/open.h:
-
-/usr/include/boost/asio/detail/limits.hpp:
 
 /usr/include/boost/archive/detail/abi_suffix.hpp:
 
@@ -2547,16 +2533,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/mpl/integral_c_tag.hpp:
 
 /usr/include/boost/asio/execution/bad_executor.hpp:
-
-/usr/include/boost/asio/execution/mapping.hpp:
-
-/usr/include/c++/11/bits/deque.tcc:
-
-/usr/include/c++/11/bit:
-
-/usr/include/boost/predef/hardware/simd/ppc.h:
-
-/usr/include/limits.h:
 
 /usr/include/boost/mpl/bind.hpp:
 
@@ -2658,6 +2634,16 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/asio/detail/cstddef.hpp:
 
+/usr/include/boost/asio/execution/mapping.hpp:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/c++/11/bit:
+
+/usr/include/boost/predef/hardware/simd/ppc.h:
+
+/usr/include/limits.h:
+
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/boost/asio/detail/assert.hpp:
@@ -2754,8 +2740,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 ../server.cpp:
 
-/usr/include/boost/asio/traits/submit_member.hpp:
-
 /usr/include/boost/asio/execution/detail/as_invocable.hpp:
 
 /usr/include/boost/move/utility_core.hpp:
@@ -2799,8 +2783,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/preprocessor/inc.hpp:
 
 /usr/include/c++/11/bits/invoke.h:
-
-/usr/include/c++/11/array:
 
 /usr/include/boost/date_time/posix_time/time_period.hpp:
 
@@ -2854,6 +2836,24 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/date_time/microsec_time_clock.hpp:
 
+/usr/include/boost/config/platform/linux.hpp:
+
+/usr/include/boost/asio/detail/atomic_count.hpp:
+
+/usr/include/boost/config/detail/posix_features.hpp:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/usr/include/boost/config/user.hpp:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
+
+/usr/include/boost/preprocessor/control/detail/while.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -2863,6 +2863,8 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/boost/asio/impl/system_executor.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/boost/serialization/static_warning.hpp:
 
@@ -2936,6 +2938,12 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/numeric/conversion/cast.hpp:
 
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/sstream:
+
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -2953,10 +2961,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/c++/11/cstdint:
 
 /usr/include/boost/asio/detail/chrono.hpp:
-
-/usr/include/termios.h:
-
-/usr/include/boost/asio/detail/impl/epoll_reactor.ipp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
 
@@ -3025,6 +3029,10 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/boost/preprocessor/debug/error.hpp:
+
+/usr/include/boost/mpl/aux_/na_assert.hpp:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/boost/asio/execution/outstanding_work.hpp:
 
@@ -3114,7 +3122,19 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
+/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/boost/asio/detail/posix_global.hpp:
+
 /usr/include/boost/asio/system_executor.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
+
+/usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -3169,10 +3189,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/x86_64-linux-gnu/bits/poll.h:
 
 /usr/include/boost/preprocessor/control/iif.hpp:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/boost/type_traits/remove_pointer.hpp:
 
@@ -3287,8 +3303,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/net/if.h:
-
-/usr/include/boost/config/platform/linux.hpp:
 
 /usr/include/boost/asio/associated_allocator.hpp:
 
@@ -3414,16 +3428,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/date_time/gregorian/gregorian_types.hpp:
 
-/usr/include/boost/config/user.hpp:
-
-/usr/include/boost/asio/detail/atomic_count.hpp:
-
-/usr/include/boost/config/detail/posix_features.hpp:
-
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/linux/close_range.h:
-
 /usr/include/boost/asio/serial_port_base.hpp:
 
 /usr/include/c++/11/string:
@@ -3457,18 +3461,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/predef/library/std/stlport.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
-
-/usr/include/boost/asio/detail/posix_global.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/boost/preprocessor/control/detail/while.hpp:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
@@ -3534,12 +3526,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/asio/detail/thread_group.hpp:
 
-/usr/local/include/opencv4/opencv2/flann/lsh_index.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
-
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
@@ -3549,10 +3535,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/asio/impl/write_at.hpp:
 
 /usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/boost/asio/traits/submit_free.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/boost/asio/detail/reactive_socket_send_op.hpp:
 
@@ -3720,6 +3702,24 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/time.h:
 
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
+/usr/include/boost/predef/os/bsd/open.h:
+
+/usr/include/boost/asio/detail/limits.hpp:
+
+/usr/include/c++/11/fstream:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/boost/asio/write.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/boost/date_time/posix_time/posix_time_types.hpp:
+
 /usr/include/boost/asio/generic/stream_protocol.hpp:
 
 /usr/include/boost/smart_ptr/detail/shared_count.hpp:
@@ -3727,6 +3727,18 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/config/compiler/gcc.hpp:
 
 /usr/include/unistd.h:
+
+/usr/include/boost/asio/traits/submit_member.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/boost/asio/traits/submit_free.hpp:
+
+/usr/include/termios.h:
+
+/usr/include/boost/asio/detail/impl/epoll_reactor.ipp:
+
+/usr/include/boost/asio/detail/executor_op.hpp:
 
 /usr/include/boost/asio/detail/std_fenced_block.hpp:
 
@@ -3793,8 +3805,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/c++/11/experimental/string_view:
 
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
-
-/usr/include/boost/date_time/posix_time/posix_time_types.hpp:
 
 /usr/local/include/opencv4/opencv2/imgproc.hpp:
 
@@ -4404,8 +4414,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/date_time/date_generators.hpp:
 
-/usr/include/c++/11/sstream:
-
 /usr/include/x86_64-linux-gnu/bits/eventfd.h:
 
 /usr/include/c++/11/bits/sstream.tcc:
@@ -4510,8 +4518,6 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 
 /usr/include/boost/preprocessor/variadic/elem.hpp:
 
-/usr/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp:
-
 /usr/include/boost/asio/impl/thread_pool.ipp:
 
 /usr/include/boost/asio/traits/prefer_member.hpp:
@@ -4577,9 +4583,3 @@ CMakeFiles/Server.dir/server.cpp.o: ../server.cpp \
 /usr/include/boost/mpl/not.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
-
-/usr/include/boost/mpl/integral_c_fwd.hpp:
-
-/usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
-
-/usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:

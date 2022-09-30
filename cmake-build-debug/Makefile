@@ -57,10 +57,10 @@ RM = /snap/clion/206/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/meibel/Documentos/ProyectoI_DatosII
+CMAKE_SOURCE_DIR = "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug/CMakeFiles /home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master/cmake-build-debug/CMakeFiles" "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master/cmake-build-debug//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabrielwolf/Documents/WorkSpace Final/ProyectoI_DatosII-master/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
