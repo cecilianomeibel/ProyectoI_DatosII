@@ -5,10 +5,20 @@
 #include <opencv4/opencv2/opencv.hpp>
 #include <opencv2/core/utils/filesystem.hpp>
 #include <opencv2/core.hpp>
+#include <opencv2/core.hpp>
+#include <boost/serialization/split_free.hpp>
+#include <boost/serialization/vector.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/archive/text_oarchive.hpp>
+#include <boost/archive/binary_iarchive.hpp>
+#include <boost/archive/binary_oarchive.hpp>
 
+#include <cassert>
+#include <string>
+#include <vector>
 
 using namespace std;
-
+using namespace cv;
 
 //Segmentacion de la imagen
 
@@ -55,7 +65,67 @@ int divideImage(const cv::Mat& img, const int blockWidth, const int blockHeight,
     return EXIT_SUCCESS;
 }
 
+//Serialization
+//Convertir mat en string y viceversa
 
+BOOST_SERIALIZATION_SPLIT_FREE( cv::Mat );
+
+namespace boost {
+    namespace serialization {
+
+        template <class Archive>
+        void save( Archive & ar, const cv::Mat & m, const unsigned int version )
+        {
+            size_t elemSize = m.elemSize();
+            size_t elemType = m.type();
+
+            ar & m.cols;
+            ar & m.rows;
+            ar & elemSize;
+            ar & elemType;
+
+            const size_t dataSize = m.cols * m.rows * m.elemSize();
+            for ( size_t i = 0; i < dataSize; ++i )
+                ar & m.data[ i ];
+        }
+
+
+        template <class Archive>
+        void load( Archive & ar, cv::Mat& m, const unsigned int version )
+        {
+            int cols, rows;
+            size_t elemSize, elemType;
+
+            ar & cols;
+            ar & rows;
+            ar & elemSize;
+            ar & elemType;
+
+            m.create( rows, cols, static_cast< int >( elemType ) );
+            const size_t dataSize = m.cols * m.rows * elemSize;
+            for (size_t i = 0; i < dataSize; ++i)
+                ar & m.data[ i ];
+        }
+    }
+}
+
+std::string save( const cv::Mat & mat ) // Pasar un mat a un string
+{
+    std::ostringstream oss;
+    boost::archive::text_oarchive toa( oss );
+    toa << mat;
+
+    return oss.str();
+}
+
+void load( cv::Mat & mat, const char * data_str ) // Pasar un string a un mat 
+{
+    std::stringstream ss;
+    ss << data_str;
+
+    boost::archive::text_iarchive tia( ss );
+    tia >> mat;
+}
 
 
 
