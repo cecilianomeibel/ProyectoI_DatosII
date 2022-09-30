@@ -126,6 +126,12 @@ void load( cv::Mat & mat, const char * data_str ) // Pasar un string a un mat
     tia >> mat;
 }
 
+string ReadMessage(boost::asio::ip::tcp::socket & socket) {
+    boost::asio::streambuf buf; // Buffer de entrada de mensajes
+    boost::asio::read_until( socket, buf, "\n"); //  Indica que lea mensaje del socket desde el buffer hasta el delimitador \n
+    string data = boost::asio::buffer_cast<const char*>(buf.data()); // Hace cast del buffer de entrada a un char pointer (caracteres legibles)
+    return data; // Retorna el mensaje recibido
+}
 
 //Funcion que envia mensaje al cliente
 
@@ -145,8 +151,8 @@ int main() {
         cin.get(); // wait for any key press
         return -1;
     }
-//imshow("ImageWindow", image);
-//waitKey(0);
+imshow("ImageWindow", image);
+waitKey(0);
 
 //Segmentar la imagen
 

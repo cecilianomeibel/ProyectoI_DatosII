@@ -1,5 +1,5 @@
-CMakeFiles/Client.dir/client.cpp.o: \
- /home/meibel/Documentos/ProyectoI_DatosII/client.cpp \
+CMakeFiles/Server.dir/server.cpp.o: \
+ /home/meibel/Documentos/ProyectoI_DatosII/server.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1089,13 +1089,9 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/include/boost/asio/windows/random_access_handle.hpp \
  /usr/include/boost/asio/windows/stream_handle.hpp \
  /usr/include/boost/asio/write_at.hpp \
- /usr/include/boost/asio/impl/write_at.hpp /usr/include/c++/11/fstream \
- /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/boost/asio/impl/write_at.hpp \
  /usr/local/include/opencv4/opencv2/opencv.hpp \
+ /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/local/include/opencv4/opencv2/core.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
  /usr/local/include/opencv4/opencv2/core/version.hpp \
@@ -1180,7 +1176,8 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/math.h \
  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
@@ -1225,6 +1222,10 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
  /usr/local/include/opencv4/opencv2/core/utils/filesystem.hpp \
  /usr/include/boost/serialization/split_free.hpp \
  /usr/include/boost/serialization/serialization.hpp \
@@ -1252,30 +1253,96 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/include/boost/type_traits/is_constructible.hpp \
  /usr/include/boost/type_traits/is_destructible.hpp \
  /usr/include/boost/serialization/access.hpp \
- /usr/include/boost/serialization/vector.hpp \
- /usr/include/boost/serialization/nvp.hpp /usr/include/boost/core/nvp.hpp \
+ /usr/include/boost/archive/text_iarchive.hpp \
+ /usr/include/boost/archive/detail/auto_link_archive.hpp \
+ /usr/include/boost/archive/detail/decl.hpp \
+ /usr/include/boost/archive/basic_text_iprimitive.hpp \
+ /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
+ /usr/include/boost/serialization/throw_exception.hpp \
+ /usr/include/boost/archive/codecvt_null.hpp \
+ /usr/include/boost/serialization/force_include.hpp \
+ /usr/include/boost/archive/archive_exception.hpp \
+ /usr/include/boost/archive/detail/abi_prefix.hpp \
+ /usr/include/boost/config/abi_prefix.hpp \
+ /usr/include/boost/archive/detail/abi_suffix.hpp \
+ /usr/include/boost/config/abi_suffix.hpp \
+ /usr/include/boost/archive/basic_streambuf_locale_saver.hpp \
+ /usr/include/boost/noncopyable.hpp \
+ /usr/include/boost/core/noncopyable.hpp \
+ /usr/include/boost/archive/basic_text_iarchive.hpp \
+ /usr/include/boost/archive/detail/common_iarchive.hpp \
+ /usr/include/boost/archive/detail/basic_iarchive.hpp \
+ /usr/include/boost/scoped_ptr.hpp \
+ /usr/include/boost/smart_ptr/scoped_ptr.hpp \
+ /usr/include/boost/serialization/tracking_enum.hpp \
+ /usr/include/boost/archive/basic_archive.hpp \
+ /usr/include/boost/integer_traits.hpp \
+ /usr/include/boost/serialization/library_version_type.hpp \
  /usr/include/boost/serialization/level.hpp \
  /usr/include/boost/type_traits/is_fundamental.hpp \
  /usr/include/boost/type_traits/is_enum.hpp \
  /usr/include/boost/serialization/level_enum.hpp \
- /usr/include/boost/serialization/tracking.hpp \
- /usr/include/boost/mpl/greater.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp \
- /usr/include/boost/type_traits/is_pointer.hpp \
- /usr/include/boost/serialization/tracking_enum.hpp \
- /usr/include/boost/serialization/type_info_implementation.hpp \
- /usr/include/boost/serialization/traits.hpp \
- /usr/include/boost/serialization/wrapper.hpp \
- /usr/include/boost/serialization/base_object.hpp \
- /usr/include/boost/type_traits/is_polymorphic.hpp \
- /usr/include/boost/serialization/force_include.hpp \
- /usr/include/boost/serialization/void_cast_fwd.hpp \
- /usr/include/boost/serialization/collection_size_type.hpp \
  /usr/include/boost/serialization/is_bitwise_serializable.hpp \
- /usr/include/boost/serialization/library_version_type.hpp \
- /usr/include/boost/integer_traits.hpp \
- /usr/include/boost/serialization/item_version_type.hpp \
- /usr/include/boost/serialization/collections_save_imp.hpp \
+ /usr/include/boost/archive/detail/helper_collection.hpp \
+ /usr/include/boost/smart_ptr/make_shared.hpp \
+ /usr/include/boost/smart_ptr/make_shared_object.hpp \
+ /usr/include/boost/move/core.hpp \
+ /usr/include/boost/move/detail/config_begin.hpp \
+ /usr/include/boost/move/detail/workaround.hpp \
+ /usr/include/boost/move/detail/config_end.hpp \
+ /usr/include/boost/move/utility_core.hpp \
+ /usr/include/boost/move/detail/meta_utils.hpp \
+ /usr/include/boost/move/detail/meta_utils_core.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_forward.hpp \
+ /usr/include/boost/type_traits/type_with_alignment.hpp \
+ /usr/include/boost/type_traits/alignment_of.hpp \
+ /usr/include/boost/type_traits/is_pod.hpp \
+ /usr/include/boost/type_traits/is_scalar.hpp \
+ /usr/include/boost/type_traits/is_pointer.hpp \
+ /usr/include/boost/type_traits/is_member_pointer.hpp \
+ /usr/include/boost/type_traits/is_member_function_pointer.hpp \
+ /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
+ /usr/include/boost/smart_ptr/make_shared_array.hpp \
+ /usr/include/boost/core/default_allocator.hpp \
+ /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
+ /usr/include/boost/core/allocator_access.hpp \
+ /usr/include/boost/core/pointer_traits.hpp \
+ /usr/include/boost/core/alloc_construct.hpp \
+ /usr/include/boost/core/noinit_adaptor.hpp \
+ /usr/include/boost/core/first_scalar.hpp \
+ /usr/include/boost/type_traits/enable_if.hpp \
+ /usr/include/boost/type_traits/extent.hpp \
+ /usr/include/boost/type_traits/is_bounded_array.hpp \
+ /usr/include/boost/type_traits/is_unbounded_array.hpp \
+ /usr/include/boost/type_traits/remove_extent.hpp \
+ /usr/include/boost/archive/detail/basic_pointer_iserializer.hpp \
+ /usr/include/boost/archive/detail/basic_serializer.hpp \
+ /usr/include/boost/serialization/extended_type_info.hpp \
+ /usr/include/c++/11/cstdarg /usr/include/boost/serialization/config.hpp \
+ /usr/include/boost/archive/detail/interface_iarchive.hpp \
+ /usr/include/boost/archive/detail/iserializer.hpp \
+ /usr/include/boost/mpl/greater_equal.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp \
+ /usr/include/boost/core/no_exceptions_support.hpp \
+ /usr/include/boost/serialization/extended_type_info_typeid.hpp \
+ /usr/include/boost/serialization/static_warning.hpp \
+ /usr/include/boost/mpl/print.hpp \
+ /usr/include/boost/type_traits/is_polymorphic.hpp \
+ /usr/include/boost/type_traits/remove_const.hpp \
+ /usr/include/boost/serialization/singleton.hpp \
+ /usr/include/boost/serialization/factory.hpp \
+ /usr/include/boost/preprocessor/comparison/greater.hpp \
+ /usr/include/boost/preprocessor/comparison/less.hpp \
+ /usr/include/boost/preprocessor/comparison/less_equal.hpp \
+ /usr/include/boost/preprocessor/logical/not.hpp \
+ /usr/include/boost/preprocessor/comparison/not_equal.hpp \
+ /usr/include/boost/serialization/smart_cast.hpp \
+ /usr/include/boost/type_traits/remove_pointer.hpp \
+ /usr/include/boost/mpl/or.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
+ /usr/include/boost/serialization/assume_abstract.hpp \
+ /usr/include/boost/type_traits/is_abstract.hpp \
+ /usr/include/boost/type_traits/has_new_operator.hpp \
  /usr/include/boost/serialization/version.hpp \
  /usr/include/boost/mpl/assert.hpp \
  /usr/include/boost/mpl/aux_/config/gpu.hpp \
@@ -1283,30 +1350,22 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/include/boost/mpl/comparison.hpp \
  /usr/include/boost/mpl/not_equal_to.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp \
+ /usr/include/boost/mpl/greater.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp \
  /usr/include/boost/mpl/less_equal.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp \
- /usr/include/boost/mpl/greater_equal.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp \
- /usr/include/boost/serialization/collections_load_imp.hpp \
- /usr/include/boost/serialization/detail/stack_constructor.hpp \
- /usr/include/boost/aligned_storage.hpp \
+ /usr/include/boost/serialization/tracking.hpp \
+ /usr/include/boost/serialization/type_info_implementation.hpp \
+ /usr/include/boost/serialization/traits.hpp \
+ /usr/include/boost/serialization/nvp.hpp /usr/include/boost/core/nvp.hpp \
+ /usr/include/boost/serialization/wrapper.hpp \
+ /usr/include/boost/serialization/base_object.hpp \
+ /usr/include/boost/serialization/void_cast_fwd.hpp \
+ /usr/include/boost/serialization/void_cast.hpp \
+ /usr/include/boost/type_traits/is_virtual_base_of.hpp \
+ /usr/include/boost/type_traits/make_void.hpp \
  /usr/include/boost/type_traits/aligned_storage.hpp \
- /usr/include/boost/type_traits/alignment_of.hpp \
- /usr/include/boost/type_traits/type_with_alignment.hpp \
- /usr/include/boost/type_traits/is_pod.hpp \
- /usr/include/boost/type_traits/is_scalar.hpp \
- /usr/include/boost/type_traits/is_member_pointer.hpp \
- /usr/include/boost/type_traits/is_member_function_pointer.hpp \
- /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
- /usr/include/boost/serialization/detail/is_default_constructible.hpp \
- /usr/include/boost/utility/enable_if.hpp \
- /usr/include/boost/move/utility_core.hpp \
- /usr/include/boost/move/detail/config_begin.hpp \
- /usr/include/boost/move/detail/workaround.hpp \
- /usr/include/boost/move/core.hpp \
- /usr/include/boost/move/detail/config_end.hpp \
- /usr/include/boost/move/detail/meta_utils.hpp \
- /usr/include/boost/move/detail/meta_utils_core.hpp \
+ /usr/include/boost/serialization/collection_size_type.hpp \
  /usr/include/boost/serialization/array_wrapper.hpp \
  /usr/include/boost/serialization/split_member.hpp \
  /usr/include/boost/serialization/array_optimization.hpp \
@@ -1337,77 +1396,11 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
- /usr/include/boost/type_traits/remove_const.hpp \
- /usr/include/boost/serialization/collection_traits.hpp \
- /usr/include/boost/archive/text_iarchive.hpp \
- /usr/include/boost/archive/detail/auto_link_archive.hpp \
- /usr/include/boost/archive/detail/decl.hpp \
- /usr/include/boost/archive/basic_text_iprimitive.hpp \
- /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
- /usr/include/boost/serialization/throw_exception.hpp \
- /usr/include/boost/archive/codecvt_null.hpp \
- /usr/include/boost/archive/archive_exception.hpp \
- /usr/include/boost/archive/detail/abi_prefix.hpp \
- /usr/include/boost/config/abi_prefix.hpp \
- /usr/include/boost/archive/detail/abi_suffix.hpp \
- /usr/include/boost/config/abi_suffix.hpp \
- /usr/include/boost/archive/basic_streambuf_locale_saver.hpp \
- /usr/include/boost/noncopyable.hpp \
- /usr/include/boost/core/noncopyable.hpp \
- /usr/include/boost/archive/basic_text_iarchive.hpp \
- /usr/include/boost/archive/detail/common_iarchive.hpp \
- /usr/include/boost/archive/detail/basic_iarchive.hpp \
- /usr/include/boost/scoped_ptr.hpp \
- /usr/include/boost/smart_ptr/scoped_ptr.hpp \
- /usr/include/boost/archive/basic_archive.hpp \
- /usr/include/boost/archive/detail/helper_collection.hpp \
- /usr/include/boost/smart_ptr/make_shared.hpp \
- /usr/include/boost/smart_ptr/make_shared_object.hpp \
- /usr/include/boost/smart_ptr/detail/sp_forward.hpp \
- /usr/include/boost/smart_ptr/make_shared_array.hpp \
- /usr/include/boost/core/default_allocator.hpp \
- /usr/include/boost/smart_ptr/allocate_shared_array.hpp \
- /usr/include/boost/core/allocator_access.hpp \
- /usr/include/boost/core/pointer_traits.hpp \
- /usr/include/boost/core/alloc_construct.hpp \
- /usr/include/boost/core/noinit_adaptor.hpp \
- /usr/include/boost/core/first_scalar.hpp \
- /usr/include/boost/type_traits/enable_if.hpp \
- /usr/include/boost/type_traits/extent.hpp \
- /usr/include/boost/type_traits/is_bounded_array.hpp \
- /usr/include/boost/type_traits/is_unbounded_array.hpp \
- /usr/include/boost/type_traits/remove_extent.hpp \
- /usr/include/boost/archive/detail/basic_pointer_iserializer.hpp \
- /usr/include/boost/archive/detail/basic_serializer.hpp \
- /usr/include/boost/serialization/extended_type_info.hpp \
- /usr/include/c++/11/cstdarg /usr/include/boost/serialization/config.hpp \
- /usr/include/boost/archive/detail/interface_iarchive.hpp \
- /usr/include/boost/archive/detail/iserializer.hpp \
- /usr/include/boost/core/no_exceptions_support.hpp \
- /usr/include/boost/serialization/extended_type_info_typeid.hpp \
- /usr/include/boost/serialization/static_warning.hpp \
- /usr/include/boost/mpl/print.hpp \
- /usr/include/boost/serialization/singleton.hpp \
- /usr/include/boost/serialization/factory.hpp \
- /usr/include/boost/preprocessor/comparison/greater.hpp \
- /usr/include/boost/preprocessor/comparison/less.hpp \
- /usr/include/boost/preprocessor/comparison/less_equal.hpp \
- /usr/include/boost/preprocessor/logical/not.hpp \
- /usr/include/boost/preprocessor/comparison/not_equal.hpp \
- /usr/include/boost/serialization/smart_cast.hpp \
- /usr/include/boost/type_traits/remove_pointer.hpp \
- /usr/include/boost/mpl/or.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
- /usr/include/boost/serialization/assume_abstract.hpp \
- /usr/include/boost/type_traits/is_abstract.hpp \
- /usr/include/boost/type_traits/has_new_operator.hpp \
- /usr/include/boost/serialization/void_cast.hpp \
- /usr/include/boost/type_traits/is_virtual_base_of.hpp \
- /usr/include/boost/type_traits/make_void.hpp \
  /usr/include/boost/archive/detail/basic_iserializer.hpp \
  /usr/include/boost/archive/detail/archive_serializer_map.hpp \
  /usr/include/boost/archive/detail/check.hpp \
  /usr/include/boost/archive/detail/register_archive.hpp \
+ /usr/include/boost/serialization/item_version_type.hpp \
  /usr/include/boost/archive/text_oarchive.hpp \
  /usr/include/boost/archive/basic_text_oprimitive.hpp \
  /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
@@ -1418,12 +1411,4 @@ CMakeFiles/Client.dir/client.cpp.o: \
  /usr/include/boost/archive/detail/oserializer.hpp \
  /usr/include/boost/archive/detail/basic_oserializer.hpp \
  /usr/include/boost/archive/detail/basic_pointer_oserializer.hpp \
- /usr/include/boost/serialization/string.hpp \
- /usr/include/boost/archive/binary_iarchive.hpp \
- /usr/include/boost/archive/binary_iarchive_impl.hpp \
- /usr/include/boost/archive/basic_binary_iprimitive.hpp \
- /usr/include/boost/archive/basic_binary_iarchive.hpp \
- /usr/include/boost/archive/binary_oarchive.hpp \
- /usr/include/boost/archive/binary_oarchive_impl.hpp \
- /usr/include/boost/archive/basic_binary_oprimitive.hpp \
- /usr/include/boost/archive/basic_binary_oarchive.hpp
+ /usr/include/boost/serialization/string.hpp

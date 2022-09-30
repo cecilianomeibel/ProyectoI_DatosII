@@ -118,8 +118,8 @@ int main() {
         message.pop_back();
         Mat result;
         load(result, message.c_str());
-        //imshow("prueba", result);
-        //waitKey(0);
+        imshow("prueba", result);
+        waitKey(0);
         blocks.push_back(result);
     }
 

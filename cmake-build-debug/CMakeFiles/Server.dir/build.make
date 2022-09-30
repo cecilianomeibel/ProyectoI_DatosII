@@ -100,6 +100,9 @@ Server: /usr/local/lib/libopencv_photo.so.4.6.0
 Server: /usr/local/lib/libopencv_stitching.so.4.6.0
 Server: /usr/local/lib/libopencv_video.so.4.6.0
 Server: /usr/local/lib/libopencv_videoio.so.4.6.0
+Server: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0
+Server: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
+Server: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.74.0
 Server: /usr/local/lib/libopencv_imgcodecs.so.4.6.0
 Server: /usr/local/lib/libopencv_dnn.so.4.6.0
 Server: /usr/local/lib/libopencv_calib3d.so.4.6.0
