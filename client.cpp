@@ -5,14 +5,12 @@
 #include <opencv4/opencv2/opencv.hpp>
 #include <opencv2/core/utils/filesystem.hpp>
 #include <opencv2/core.hpp>
-#include <opencv2/core.hpp>
 #include <boost/serialization/split_free.hpp>
 #include <boost/serialization/vector.hpp>
 #include <boost/archive/text_iarchive.hpp>
 #include <boost/archive/text_oarchive.hpp>
 #include <boost/archive/binary_iarchive.hpp>
 #include <boost/archive/binary_oarchive.hpp>
-
 #include <cassert>
 #include <string>
 #include <vector>
@@ -64,6 +62,7 @@ int divideImage(const cv::Mat& img, const int blockWidth, const int blockHeight,
     }
     return EXIT_SUCCESS;
 }
+
 
 //Serialization
 //Convertir mat en string y viceversa
@@ -118,7 +117,7 @@ std::string save( const cv::Mat & mat ) // Pasar un mat a un string
     return oss.str();
 }
 
-void load( cv::Mat & mat, const char * data_str ) // Pasar un string a un mat 
+void load( cv::Mat & mat, const char * data_str ) // Pasar un string a un mat
 {
     std::stringstream ss;
     ss << data_str;
@@ -128,49 +127,72 @@ void load( cv::Mat & mat, const char * data_str ) // Pasar un string a un mat
 }
 
 
+//Funcion que envia mensaje al cliente
 
 
-
-
-
-
-
+void SendMessage(boost::asio::ip::tcp::socket & socket, string message) {
+    string msg = message + "\n"; // Declara variable string con un delimitador linea siguiente
+    boost::asio::write( socket, boost::asio::buffer(msg)); // Envia mensaje a cliente mediante buffer
+}
 
 
 int main() {
+
+    cv::Mat image = imread("/home/meibel/Descargas/convertidorImg-main/untitled/stitch.jpg", IMREAD_COLOR);
+    if (image.empty()) { //Verify if the image has been readed correctly
+        cout << "Image File "
+             << "Not Found" << endl;
+        cin.get(); // wait for any key press
+        return -1;
+    }
+//imshow("ImageWindow", image);
+//waitKey(0);
+
+//Segmentar la imagen
+
+// init vars
+    const int blockw = 128;
+    const int blockh = 128;
+    std::vector<cv::Mat> blocks;
+    int divideStatus = divideImage(image, blockw, blockh, blocks);
+// debug: save blocks
+/*
+cv::utils::fs::createDirectory("blocksFolder");
+for (int j = 0; j < blocks.size(); j++)
+{
+    std::string blockId = std::to_string(j);
+    std::string blockImgName = "blocksFolder/block#" + blockId + ".jpeg";
+    imwrite(blockImgName, blocks[j]);
+}*/
+
+//Socket
+
     boost::asio::io_service io_service; // Servicio de input/output
     boost::asio::ip::tcp::socket socket(io_service); // Declaracion de socket para conexiones
     boost::system::error_code error; // Variable para codigo de error especifico de Boost
-    boost::asio::streambuf receive_buffer; // Buffer para recibir mensajes
-    const string outMessage = "Hola, soy el cliente\n"; // Mensaje a enviar
-    
-    ofstream txtFile("imageBin.txt");
-
-
 
     socket.connect(boost::asio::ip::tcp::endpoint( boost::asio::ip::address::from_string("127.0.0.1"), 1234));
-                                                                       // Conecta socket a IP local con puerto del servidor
     cout << "Conectado al servidor" << endl;
+    string size = to_string(blocks.size());
 
-    boost::asio::write(socket, boost::asio::buffer(outMessage), error ); // Escribe mensaje al servido
+    SendMessage(socket, size);
+    string receivedMessage = ReadMessage(socket);
+    receivedMessage.pop_back();
+    cout << "Server dice que: "<<receivedMessage<<endl;
 
-
-    if(!error) {
-        cout << "Mensaje enviado" << endl;
-        
-    }
-    else {
-        cout << "error" << error.message() << endl;
-    }
-
-    boost::asio::read(socket, receive_buffer, boost::asio::transfer_all(), error); // Guarda mensaje recibido en el buffer
-
-    if (error && error != boost::asio::error::eof) {
-        cout << "error" << error.message() << endl;
-    } else {
-        const char* inMessage = boost::asio::buffer_cast<const char*>(receive_buffer.data()); // Interpreta mensaje recibido
-        cout << "Servidor dice: " + (string) inMessage << endl; // Se hace cast a string al inMessage ya que es un const char pointer,
-                                                                  // para poder concatenarlo basicamente
+    for (int i = 0; i < blocks.size(); i++){
+        cv::Mat TEMP = blocks[i];
+        std::string serialized = save(TEMP);
+        SendMessage(socket, serialized); // Escribe mensaje al servidor
+        string receivedStatus = ReadMessage(socket);
+        receivedMessage.pop_back();
+        cout << "Server dice: "<<receivedStatus<<endl;
     }
     return 0;
 }
+
+
+
+
+
+
