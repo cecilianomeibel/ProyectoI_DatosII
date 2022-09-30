@@ -1194,147 +1194,6 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
   /usr/include/boost/asio/windows/stream_handle.hpp \
   /usr/include/boost/asio/write_at.hpp \
   /usr/include/boost/asio/impl/write_at.hpp \
-  /usr/local/include/opencv4/opencv2/opencv.hpp \
-  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
-  /usr/local/include/opencv4/opencv2/core.hpp \
-  /usr/local/include/opencv4/opencv2/core/cvdef.h \
-  /usr/local/include/opencv4/opencv2/core/version.hpp \
-  /usr/local/include/opencv4/opencv2/core/hal/interface.h \
-  /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
-  /usr/include/c++/11/stdlib.h \
-  /usr/local/include/opencv4/opencv2/core/base.hpp \
-  /usr/local/include/opencv4/opencv2/core/cvstd.hpp \
-  /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
-  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
-  /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp \
-  /usr/local/include/opencv4/opencv2/core/check.hpp \
-  /usr/local/include/opencv4/opencv2/core/traits.hpp \
-  /usr/local/include/opencv4/opencv2/core/matx.hpp \
-  /usr/local/include/opencv4/opencv2/core/saturate.hpp \
-  /usr/local/include/opencv4/opencv2/core/fast_math.hpp \
-  /usr/local/include/opencv4/opencv2/core/types.hpp \
-  /usr/include/c++/11/cfloat \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-  /usr/local/include/opencv4/opencv2/core/mat.hpp \
-  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp \
-  /usr/local/include/opencv4/opencv2/core/mat.inl.hpp \
-  /usr/local/include/opencv4/opencv2/core/persistence.hpp \
-  /usr/local/include/opencv4/opencv2/core/operations.hpp \
-  /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp \
-  /usr/include/c++/11/complex \
-  /usr/local/include/opencv4/opencv2/core/utility.hpp \
-  /usr/local/include/opencv4/opencv2/core/optim.hpp \
-  /usr/local/include/opencv4/opencv2/core/ovx.hpp \
-  /usr/local/include/opencv4/opencv2/core/cvdef.h \
-  /usr/local/include/opencv4/opencv2/calib3d.hpp \
-  /usr/local/include/opencv4/opencv2/features2d.hpp \
-  /usr/local/include/opencv4/opencv2/flann/miniflann.hpp \
-  /usr/local/include/opencv4/opencv2/flann/defines.h \
-  /usr/local/include/opencv4/opencv2/flann/config.h \
-  /usr/local/include/opencv4/opencv2/core/affine.hpp \
-  /usr/local/include/opencv4/opencv2/dnn.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
-  /usr/local/include/opencv4/opencv2/core/async.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/version.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/dict.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/layer.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
-  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
-  /usr/local/include/opencv4/opencv2/flann.hpp \
-  /usr/local/include/opencv4/opencv2/flann/flann_base.hpp \
-  /usr/local/include/opencv4/opencv2/flann/general.h \
-  /usr/local/include/opencv4/opencv2/flann/matrix.h \
-  /usr/local/include/opencv4/opencv2/flann/params.h \
-  /usr/local/include/opencv4/opencv2/flann/any.h \
-  /usr/local/include/opencv4/opencv2/flann/defines.h \
-  /usr/local/include/opencv4/opencv2/flann/saving.h \
-  /usr/local/include/opencv4/opencv2/flann/nn_index.h \
-  /usr/local/include/opencv4/opencv2/flann/result_set.h \
-  /usr/include/c++/11/set \
-  /usr/include/c++/11/bits/stl_set.h \
-  /usr/include/c++/11/bits/stl_multiset.h \
-  /usr/local/include/opencv4/opencv2/flann/all_indices.h \
-  /usr/local/include/opencv4/opencv2/flann/kdtree_index.h \
-  /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h \
-  /usr/local/include/opencv4/opencv2/flann/dist.h \
-  /usr/local/include/opencv4/opencv2/flann/heap.h \
-  /usr/include/c++/11/unordered_map \
-  /usr/include/c++/11/bits/hashtable.h \
-  /usr/include/c++/11/bits/hashtable_policy.h \
-  /usr/include/c++/11/bits/enable_special_members.h \
-  /usr/include/c++/11/bits/unordered_map.h \
-  /usr/local/include/opencv4/opencv2/flann/allocator.h \
-  /usr/local/include/opencv4/opencv2/flann/random.h \
-  /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h \
-  /usr/local/include/opencv4/opencv2/flann/kmeans_index.h \
-  /usr/local/include/opencv4/opencv2/flann/logger.h \
-  /usr/local/include/opencv4/opencv2/flann/composite_index.h \
-  /usr/local/include/opencv4/opencv2/flann/linear_index.h \
-  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
-  /usr/local/include/opencv4/opencv2/flann/lsh_index.h \
-  /usr/local/include/opencv4/opencv2/flann/lsh_table.h \
-  /usr/include/c++/11/iomanip \
-  /usr/include/c++/11/locale \
-  /usr/include/c++/11/bits/locale_facets_nonio.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
-  /usr/include/libintl.h \
-  /usr/include/c++/11/bits/codecvt.h \
-  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/bits/quoted_string.h \
-  /usr/include/c++/11/math.h \
-  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
-  /usr/local/include/opencv4/opencv2/flann/ground_truth.h \
-  /usr/local/include/opencv4/opencv2/flann/index_testing.h \
-  /usr/local/include/opencv4/opencv2/flann/timer.h \
-  /usr/local/include/opencv4/opencv2/flann/sampling.h \
-  /usr/local/include/opencv4/opencv2/highgui.hpp \
-  /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
-  /usr/local/include/opencv4/opencv2/videoio.hpp \
-  /usr/local/include/opencv4/opencv2/imgproc.hpp \
-  /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
-  /usr/local/include/opencv4/opencv2/ml.hpp \
-  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp \
-  /usr/local/include/opencv4/opencv2/objdetect.hpp \
-  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
-  /usr/local/include/opencv4/opencv2/objdetect/face.hpp \
-  /usr/local/include/opencv4/opencv2/photo.hpp \
-  /usr/local/include/opencv4/opencv2/stitching.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp \
-  /usr/local/include/opencv4/opencv2/core/cuda.hpp \
-  /usr/local/include/opencv4/opencv2/core/cuda_types.hpp \
-  /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp \
-  /usr/include/c++/11/list \
-  /usr/include/c++/11/bits/stl_list.h \
-  /usr/include/c++/11/bits/list.tcc \
-  /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
-  /usr/include/c++/11/queue \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/bits/stl_queue.h \
-  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp \
-  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
-  /usr/local/include/opencv4/opencv2/video.hpp \
-  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
-  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
-  /usr/local/include/opencv4/opencv2/core/utils/filesystem.hpp \
   /usr/include/boost/serialization/split_free.hpp \
   /usr/include/boost/serialization/serialization.hpp \
   /usr/include/boost/serialization/strong_typedef.hpp \
@@ -1457,6 +1316,14 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
   /usr/include/boost/archive/detail/auto_link_archive.hpp \
   /usr/include/boost/archive/detail/decl.hpp \
   /usr/include/boost/archive/basic_text_iprimitive.hpp \
+  /usr/include/c++/11/locale \
+  /usr/include/c++/11/bits/locale_facets_nonio.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/11/bits/locale_conv.h \
   /usr/include/boost/io/ios_state.hpp \
   /usr/include/boost/io_fwd.hpp \
   /usr/include/boost/serialization/throw_exception.hpp \
@@ -1526,6 +1393,8 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
   /usr/include/boost/archive/detail/register_archive.hpp \
   /usr/include/boost/archive/text_oarchive.hpp \
   /usr/include/boost/archive/basic_text_oprimitive.hpp \
+  /usr/include/c++/11/iomanip \
+  /usr/include/c++/11/bits/quoted_string.h \
   /usr/include/boost/integer.hpp \
   /usr/include/boost/integer_fwd.hpp \
   /usr/include/boost/archive/basic_text_oarchive.hpp \
@@ -1543,8 +1412,227 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
   /usr/include/boost/archive/binary_oarchive.hpp \
   /usr/include/boost/archive/binary_oarchive_impl.hpp \
   /usr/include/boost/archive/basic_binary_oprimitive.hpp \
-  /usr/include/boost/archive/basic_binary_oarchive.hpp
+  /usr/include/boost/archive/basic_binary_oarchive.hpp \
+  /usr/local/include/opencv4/opencv2/opencv.hpp \
+  /usr/local/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/local/include/opencv4/opencv2/core.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/include/opencv4/opencv2/core/version.hpp \
+  /usr/local/include/opencv4/opencv2/core/hal/interface.h \
+  /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/local/include/opencv4/opencv2/core/base.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvstd.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+  /usr/local/include/opencv4/opencv2/core/neon_utils.hpp \
+  /usr/local/include/opencv4/opencv2/core/vsx_utils.hpp \
+  /usr/local/include/opencv4/opencv2/core/check.hpp \
+  /usr/local/include/opencv4/opencv2/core/traits.hpp \
+  /usr/local/include/opencv4/opencv2/core/matx.hpp \
+  /usr/local/include/opencv4/opencv2/core/saturate.hpp \
+  /usr/local/include/opencv4/opencv2/core/fast_math.hpp \
+  /usr/local/include/opencv4/opencv2/core/types.hpp \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /usr/local/include/opencv4/opencv2/core/mat.hpp \
+  /usr/local/include/opencv4/opencv2/core/bufferpool.hpp \
+  /usr/local/include/opencv4/opencv2/core/mat.inl.hpp \
+  /usr/local/include/opencv4/opencv2/core/persistence.hpp \
+  /usr/local/include/opencv4/opencv2/core/operations.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvstd.inl.hpp \
+  /usr/include/c++/11/complex \
+  /usr/local/include/opencv4/opencv2/core/utility.hpp \
+  /usr/local/include/opencv4/opencv2/core/optim.hpp \
+  /usr/local/include/opencv4/opencv2/core/ovx.hpp \
+  /usr/local/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/include/opencv4/opencv2/calib3d.hpp \
+  /usr/local/include/opencv4/opencv2/features2d.hpp \
+  /usr/local/include/opencv4/opencv2/flann/miniflann.hpp \
+  /usr/local/include/opencv4/opencv2/flann/defines.h \
+  /usr/local/include/opencv4/opencv2/flann/config.h \
+  /usr/local/include/opencv4/opencv2/core/affine.hpp \
+  /usr/local/include/opencv4/opencv2/dnn.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/local/include/opencv4/opencv2/core/async.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/version.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dict.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/layer.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+  /usr/local/include/opencv4/opencv2/dnn/dnn.hpp \
+  /usr/local/include/opencv4/opencv2/flann.hpp \
+  /usr/local/include/opencv4/opencv2/flann/flann_base.hpp \
+  /usr/local/include/opencv4/opencv2/flann/general.h \
+  /usr/local/include/opencv4/opencv2/flann/matrix.h \
+  /usr/local/include/opencv4/opencv2/flann/params.h \
+  /usr/local/include/opencv4/opencv2/flann/any.h \
+  /usr/local/include/opencv4/opencv2/flann/defines.h \
+  /usr/local/include/opencv4/opencv2/flann/saving.h \
+  /usr/local/include/opencv4/opencv2/flann/nn_index.h \
+  /usr/local/include/opencv4/opencv2/flann/result_set.h \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/local/include/opencv4/opencv2/flann/all_indices.h \
+  /usr/local/include/opencv4/opencv2/flann/kdtree_index.h \
+  /usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h \
+  /usr/local/include/opencv4/opencv2/flann/dist.h \
+  /usr/local/include/opencv4/opencv2/flann/heap.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h \
+  /usr/local/include/opencv4/opencv2/flann/allocator.h \
+  /usr/local/include/opencv4/opencv2/flann/random.h \
+  /usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h \
+  /usr/local/include/opencv4/opencv2/flann/kmeans_index.h \
+  /usr/local/include/opencv4/opencv2/flann/logger.h \
+  /usr/local/include/opencv4/opencv2/flann/composite_index.h \
+  /usr/local/include/opencv4/opencv2/flann/linear_index.h \
+  /usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+  /usr/local/include/opencv4/opencv2/flann/lsh_index.h \
+  /usr/local/include/opencv4/opencv2/flann/lsh_table.h \
+  /usr/include/c++/11/math.h \
+  /usr/local/include/opencv4/opencv2/flann/autotuned_index.h \
+  /usr/local/include/opencv4/opencv2/flann/ground_truth.h \
+  /usr/local/include/opencv4/opencv2/flann/index_testing.h \
+  /usr/local/include/opencv4/opencv2/flann/timer.h \
+  /usr/local/include/opencv4/opencv2/flann/sampling.h \
+  /usr/local/include/opencv4/opencv2/highgui.hpp \
+  /usr/local/include/opencv4/opencv2/imgcodecs.hpp \
+  /usr/local/include/opencv4/opencv2/videoio.hpp \
+  /usr/local/include/opencv4/opencv2/imgproc.hpp \
+  /usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp \
+  /usr/local/include/opencv4/opencv2/ml.hpp \
+  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+  /usr/local/include/opencv4/opencv2/objdetect/face.hpp \
+  /usr/local/include/opencv4/opencv2/photo.hpp \
+  /usr/local/include/opencv4/opencv2/stitching.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/warpers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/local/include/opencv4/opencv2/core/cuda.hpp \
+  /usr/local/include/opencv4/opencv2/core/cuda_types.hpp \
+  /usr/local/include/opencv4/opencv2/core/cuda.inl.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  /usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+  /usr/local/include/opencv4/opencv2/stitching/detail/camera.hpp \
+  /usr/local/include/opencv4/opencv2/video.hpp \
+  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
+  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+  /usr/local/include/opencv4/opencv2/core/utils/filesystem.hpp
 
+
+/usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
+
+/usr/include/c++/11/queue:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
+
+/usr/include/c++/11/list:
+
+/usr/local/include/opencv4/opencv2/video.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect/face.hpp:
+
+/usr/local/include/opencv4/opencv2/objdetect.hpp:
+
+/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
+
+/usr/local/include/opencv4/opencv2/imgcodecs.hpp:
+
+/usr/local/include/opencv4/opencv2/highgui.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
+
+/usr/include/c++/11/math.h:
+
+/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/linear_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/logger.h:
+
+/usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/random.h:
+
+/usr/local/include/opencv4/opencv2/flann/allocator.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
+
+/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
+
+/usr/local/include/opencv4/opencv2/flann/all_indices.h:
+
+/usr/include/c++/11/set:
+
+/usr/local/include/opencv4/opencv2/flann/matrix.h:
+
+/usr/local/include/opencv4/opencv2/flann.hpp:
+
+/usr/local/include/opencv4/opencv2/core/affine.hpp:
+
+/usr/local/include/opencv4/opencv2/calib3d.hpp:
+
+/usr/local/include/opencv4/opencv2/core/utility.hpp:
+
+/usr/include/c++/11/complex:
+
+/usr/local/include/opencv4/opencv2/core/persistence.hpp:
+
+/usr/local/include/opencv4/opencv2/core/bufferpool.hpp:
+
+/usr/local/include/opencv4/opencv2/core/check.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
+/usr/local/include/opencv4/opencv2/core/base.hpp:
+
+/usr/local/include/opencv4/opencv2/core/version.hpp:
+
+/usr/local/include/opencv4/opencv2/core/cvdef.h:
 
 /usr/include/boost/archive/basic_binary_oprimitive.hpp:
 
@@ -1572,11 +1660,21 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/archive/detail/register_archive.hpp:
 
+/usr/local/include/opencv4/opencv2/ml/ml.inl.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/params.h:
+
+/usr/include/boost/archive/detail/check.hpp:
+
 /usr/include/boost/archive/detail/archive_serializer_map.hpp:
 
 /usr/include/boost/archive/detail/basic_iserializer.hpp:
 
 /usr/include/boost/type_traits/make_void.hpp:
+
+/usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
+
+/usr/include/boost/type_traits/is_virtual_base_of.hpp:
 
 /usr/include/boost/serialization/void_cast.hpp:
 
@@ -1595,6 +1693,10 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 /usr/include/boost/preprocessor/comparison/less.hpp:
 
 /usr/include/boost/preprocessor/comparison/greater.hpp:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/usr/include/boost/serialization/factory.hpp:
 
 /usr/include/boost/archive/detail/iserializer.hpp:
 
@@ -1640,6 +1742,14 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/io/ios_state.hpp:
 
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/locale:
+
+/usr/local/include/opencv4/opencv2/core/optim.hpp:
+
+/usr/include/boost/archive/detail/decl.hpp:
+
 /usr/include/boost/archive/text_iarchive.hpp:
 
 /usr/include/boost/serialization/collection_traits.hpp:
@@ -1649,6 +1759,10 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 /usr/include/boost/type_traits/remove_const.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp:
+
+/usr/local/include/opencv4/opencv2/videoio.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
 
 /usr/include/boost/mpl/aux_/config/bcc.hpp:
 
@@ -1664,6 +1778,10 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
 
+/usr/include/c++/11/bits/stl_queue.h:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
+
 /usr/include/boost/mpl/aux_/arg_typedef.hpp:
 
 /usr/include/boost/mpl/aux_/na_assert.hpp:
@@ -1671,6 +1789,10 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 /usr/include/boost/mpl/arg_fwd.hpp:
 
 /usr/include/boost/mpl/arg.hpp:
+
+/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/include/boost/mpl/placeholders.hpp:
 
 /usr/include/boost/mpl/apply.hpp:
 
@@ -1689,6 +1811,10 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp:
 
 /usr/include/boost/type_traits/is_member_function_pointer.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
+
+/usr/include/boost/type_traits/is_scalar.hpp:
 
 /usr/include/boost/serialization/collections_load_imp.hpp:
 
@@ -1724,6 +1850,10 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/serialization/level.hpp:
 
+/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+
+/usr/include/boost/core/nvp.hpp:
+
 /usr/include/boost/serialization/nvp.hpp:
 
 /usr/include/boost/serialization/vector.hpp:
@@ -1732,17 +1862,35 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/type_traits/has_nothrow_copy.hpp:
 
+/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
+
+/usr/include/boost/type_traits/is_default_constructible.hpp:
+
 /usr/include/boost/type_traits/has_nothrow_constructor.hpp:
 
 /usr/include/boost/type_traits/is_array.hpp:
 
 /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
+/usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
+
+/usr/include/boost/mpl/print.hpp:
+
+/usr/include/boost/type_traits/remove_reference.hpp:
+
 /usr/include/boost/type_traits/is_rvalue_reference.hpp:
 
 /usr/include/boost/type_traits/is_lvalue_reference.hpp:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/boost/type_traits/is_reference.hpp:
+
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
+
+/usr/include/c++/11/bits/locale_facets_nonio.h:
+
+/usr/include/boost/type_traits/declval.hpp:
 
 /usr/include/boost/archive/detail/abi_prefix.hpp:
 
@@ -1758,157 +1906,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/serialization/serialization.hpp:
 
-/usr/local/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp:
-
-/usr/include/c++/11/bits/stl_queue.h:
-
-/usr/include/c++/11/queue:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
-
-/usr/include/c++/11/list:
-
-/usr/include/boost/mpl/print.hpp:
-
-/usr/include/boost/type_traits/remove_reference.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
-
-/usr/local/include/opencv4/opencv2/video.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/matchers.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
-
-/usr/local/include/opencv4/opencv2/core/cuda.inl.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers.hpp:
-
-/usr/include/boost/type_traits/is_virtual_base_of.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching/warpers.hpp:
-
-/usr/local/include/opencv4/opencv2/stitching.hpp:
-
-/usr/local/include/opencv4/opencv2/objdetect/face.hpp:
-
-/usr/local/include/opencv4/opencv2/objdetect.hpp:
-
-/usr/local/include/opencv4/opencv2/imgproc/segmentation.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
-
-/usr/local/include/opencv4/opencv2/videoio.hpp:
-
-/usr/local/include/opencv4/opencv2/imgcodecs.hpp:
-
-/usr/local/include/opencv4/opencv2/highgui.hpp:
-
-/usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
-
-/usr/include/c++/11/math.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/boost/type_traits/is_reference.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
-
-/usr/include/boost/type_traits/declval.hpp:
-
-/usr/include/c++/11/bits/locale_facets_nonio.h:
-
-/usr/include/c++/11/locale:
-
-/usr/local/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
-
-/usr/local/include/opencv4/opencv2/flann/linear_index.h:
-
-/usr/local/include/opencv4/opencv2/flann/logger.h:
-
-/usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
-
-/usr/include/boost/mpl/placeholders.hpp:
-
-/usr/local/include/opencv4/opencv2/flann/kdtree_single_index.h:
-
-/usr/local/include/opencv4/opencv2/flann/random.h:
-
-/usr/local/include/opencv4/opencv2/flann/allocator.h:
-
-/usr/include/c++/11/bits/unordered_map.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/unordered_map:
-
-/usr/local/include/opencv4/opencv2/flann/dynamic_bitset.h:
-
-/usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
-
-/usr/local/include/opencv4/opencv2/flann/all_indices.h:
-
-/usr/include/boost/serialization/factory.hpp:
-
-/usr/include/c++/11/bits/stl_set.h:
-
-/usr/include/c++/11/set:
-
-/usr/include/boost/archive/detail/check.hpp:
-
-/usr/local/include/opencv4/opencv2/ml/ml.inl.hpp:
-
-/usr/local/include/opencv4/opencv2/flann/params.h:
-
-/usr/local/include/opencv4/opencv2/flann/matrix.h:
-
-/usr/local/include/opencv4/opencv2/flann.hpp:
-
-/usr/include/boost/core/nvp.hpp:
-
-/usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
-
-/usr/include/boost/serialization/split_free.hpp:
-
 /usr/local/include/opencv4/opencv2/dnn.hpp:
 
-/usr/local/include/opencv4/opencv2/core/affine.hpp:
-
-/usr/local/include/opencv4/opencv2/calib3d.hpp:
-
-/usr/include/boost/archive/detail/decl.hpp:
-
-/usr/local/include/opencv4/opencv2/core/optim.hpp:
-
-/usr/local/include/opencv4/opencv2/core/utility.hpp:
-
-/usr/include/c++/11/complex:
-
-/usr/local/include/opencv4/opencv2/core/persistence.hpp:
-
-/usr/include/boost/type_traits/is_default_constructible.hpp:
-
-/usr/local/include/opencv4/opencv2/core/mat.inl.hpp:
-
-/usr/local/include/opencv4/opencv2/core/bufferpool.hpp:
-
-/usr/local/include/opencv4/opencv2/core/check.hpp:
-
-/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
-
-/usr/local/include/opencv4/opencv2/core/base.hpp:
-
-/usr/include/boost/type_traits/is_scalar.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
-
-/usr/local/include/opencv4/opencv2/core/version.hpp:
-
-/usr/local/include/opencv4/opencv2/core/cvdef.h:
+/usr/include/boost/serialization/split_free.hpp:
 
 /usr/include/boost/core/noinit_adaptor.hpp:
 
@@ -2226,9 +2226,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/asio/ip/impl/network_v6.hpp:
 
-/usr/include/boost/mpl/greater.hpp:
-
 /usr/local/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
+
+/usr/include/boost/mpl/greater.hpp:
 
 /usr/include/boost/predef/architecture.h:
 
@@ -2246,9 +2246,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/asio/ip/address_v4_iterator.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
-
 /usr/local/include/opencv4/opencv2/core/mat.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
 
 /usr/include/boost/asio/ip/impl/address.ipp:
 
@@ -2718,9 +2718,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
-
 /usr/local/include/opencv4/opencv2/core/operations.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp:
 
 /usr/include/boost/predef/platform/windows_uwp.h:
 
@@ -2870,9 +2870,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/asio/impl/system_executor.hpp:
 
-/usr/include/boost/serialization/static_warning.hpp:
-
 /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
+
+/usr/include/boost/serialization/static_warning.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -2994,9 +2994,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/asio/require.hpp:
 
-/usr/include/boost/archive/detail/basic_serializer.hpp:
-
 /usr/local/include/opencv4/opencv2/flann/any.h:
+
+/usr/include/boost/archive/detail/basic_serializer.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -3194,11 +3194,11 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
-/usr/include/boost/mpl/assert.hpp:
-
 /usr/local/include/opencv4/opencv2/flann/saving.h:
 
 /usr/local/include/opencv4/opencv2/dnn/dnn.hpp:
+
+/usr/include/boost/mpl/assert.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_day.hpp:
 
@@ -3642,9 +3642,9 @@ CMakeFiles/Client.dir/client.cpp.o: ../client.cpp \
 
 /usr/include/boost/mpl/bool_fwd.hpp:
 
-/usr/include/boost/type_traits/aligned_storage.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/include/boost/type_traits/aligned_storage.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
