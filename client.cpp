@@ -20,52 +20,45 @@ using namespace cv;
 
 //Segmentacion de la imagen
 
-int divideImage(const cv::Mat& img, const int blockWidth, const int blockHeight, std::vector<cv::Mat>& blocks)
+int divideImage(const cv::Mat& img, const int blockWidth, std::vector<cv::Mat>& blocks) //Se elimina el parametro de altura porque este va a ser constante
 {
-    // Checking if the image was passed correctly
+    // Esto comprueba si la imagen carga bien para luego segmentarla
     if (!img.data || img.empty())
     {
-        std::cout << "Image Error: Cannot load image to divide." << std::endl;
+        std::cout << "Error en la imagen: No se ha podido cargar la imagen para segmentarla" << std::endl;
         return EXIT_FAILURE;
     }
 
-    // init image dimensions
-    int imgWidth = img.cols;
-    int imgHeight = img.rows;
-    std::cout << "IMAGE SIZE: " << "(" << imgWidth << "," << imgHeight << ")" << std::endl;
+        // inicializar las dimensiones de la imagen
+        int imgWidth = img.cols;
+        int imgHeight = img.rows;
+        std::cout << "IMAGE SIZE: " << "(" << imgWidth << "," << imgHeight << ")" << std::endl;
 
-    // init block dimensions
-    int bwSize;
-    int bhSize;
+        // inicializar las dimensiones del segmento (block)
+        int bwSize;
+        int bhSize = img.rows;
 
-    int y0 = 0;
-    while (y0 < imgHeight)
-    {
-        // compute the block height
-        bhSize = ((y0 + blockHeight) > imgHeight) * (blockHeight - (y0 + blockHeight - imgHeight)) + ((y0 + blockHeight) <= imgHeight) * blockHeight;
-
+        int y0 = 0;
         int x0 = 0;
         while (x0 < imgWidth)
         {
-            // compute the block witdh
+            // La altura del segmento no cambia
+            // Calcula el ancho de cada segmento
             bwSize = ((x0 + blockWidth) > imgWidth) * (blockWidth - (x0 + blockWidth - imgWidth)) + ((x0 + blockWidth) <= imgWidth) * blockWidth;
 
-            // crop block
+            // Crea los segmentos con el ancho calculado
             blocks.push_back(img(cv::Rect(x0, y0, bwSize, bhSize)).clone());
 
-            // update x-coordinate
+            // Actualizar la coordenada  x
             x0 = x0 + blockWidth;
         }
-
-        // update y-coordinate
-        y0 = y0 + blockHeight;
+        return EXIT_SUCCESS;
     }
-    return EXIT_SUCCESS;
-}
+
 
 
 //Serialization
-//Convertir mat en string y viceversa
+//Convertir la imagen de mat a string y viceversa
 
 BOOST_SERIALIZATION_SPLIT_FREE( cv::Mat );
 
@@ -108,7 +101,7 @@ namespace boost {
     }
 }
 
-std::string save( const cv::Mat & mat ) // Pasar un mat a un string
+std::string save( const cv::Mat & mat ) //  Permite hacer la conversion de mat a un string
 {
     std::ostringstream oss;
     boost::archive::text_oarchive toa( oss );
@@ -117,7 +110,7 @@ std::string save( const cv::Mat & mat ) // Pasar un mat a un string
     return oss.str();
 }
 
-void load( cv::Mat & mat, const char * data_str ) // Pasar un string a un mat
+void load( cv::Mat & mat, const char * data_str ) // Permite hacer la conversion de string a un string a un mat
 {
     std::stringstream ss;
     ss << data_str;
@@ -151,32 +144,21 @@ int main() {
         cin.get(); // wait for any key press
         return -1;
     }
-   // imshow("ImageWindow", image);
-    //waitKey(0);
+
 
 //Segmentar la imagen
 
 // init vars
     const int blockw = 128;
-    const int blockh = 128;
     std::vector<cv::Mat> blocks;
-    int divideStatus = divideImage(image, blockw, blockh, blocks);
-    //Crea una carpeta con los segmentos
-    cv::utils::fs::createDirectory("blocksFolder");
+    int divideStatus = divideImage(image, blockw, blocks);
 
-    for (int j = 0; j < blocks.size(); j++)
-    {
-    std::string blockId = std::to_string(j);
-    std::string blockImgName = "blocksFolder/block#" + blockId + ".jpeg";
-    imwrite(blockImgName, blocks[j]);
-    }
 
 
 //Socket
 
     boost::asio::io_service io_service; // Servicio de input/output
     boost::asio::ip::tcp::socket socket(io_service); // Declaracion de socket para conexiones
-    boost::system::error_code error; // Variable para codigo de error especifico de Boost
 
     socket.connect(boost::asio::ip::tcp::endpoint( boost::asio::ip::address::from_string("127.0.0.1"), 1234));
     cout << "Conectado al servidor" << endl;

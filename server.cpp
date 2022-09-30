@@ -14,7 +14,8 @@
 using namespace std;
 using namespace cv;
 
-//Serializacion 
+//Serializacion
+// Convierte un mat a string y viceversa
 
 BOOST_SERIALIZATION_SPLIT_FREE( cv::Mat )
 
@@ -58,7 +59,7 @@ namespace boost {
     } // namespace serialization
 } // namespace boost
 
-std::string save( const cv::Mat & mat )
+std::string save( const cv::Mat & mat )  //  Convierte un mat a string
 {
     std::ostringstream oss;
     boost::archive::text_oarchive toa( oss );
@@ -67,7 +68,7 @@ std::string save( const cv::Mat & mat )
     return oss.str();
 }
 
-void load( cv::Mat & mat, const char * data_str )
+void load( cv::Mat & mat, const char * data_str ) //Convierte un string a mat
 {
     std::stringstream ss;
     ss << data_str;
@@ -113,22 +114,25 @@ int main() {
 
     for (int i = 0; i < size; i++) {
         string message = ReadMessage(socket_); // Lee y declara mensaje del cliente
-        SendMessage(socket_, "Pedazo " + to_string(i) + " recibido");
+        SendMessage(socket_, "Segmento" + to_string(i) + " recibido");
         message.pop_back();
         Mat result;
         load(result, message.c_str());
-        imshow("prueba", result);
-        waitKey(0);
         blocks.push_back(result);
     }
 
-    //Rearmar
+    Mat Result;
+    hconcat(blocks, Result); //Vuelve a unir los segmentos
+    imshow("Resultado", Result);
+    waitKey(0);
+
+    //Se crea un folder donde se pueden ver los segmentos de la imagen
 
     cv::utils::fs::createDirectory("Result");
     for (int j = 0; j < blocks.size(); j++)
     {
         std::string blockId = std::to_string(j);
-        std::string blockImgName = "Result/block#" + blockId + ".jpeg";
+        std::string blockImgName = "Result/block#" + blockId + ".jpg";
         imwrite(blockImgName, blocks[j]);
     }
 
