@@ -49,6 +49,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/snap/clion/206/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -151,8 +166,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII/cmake-build-debug",
-		"source" : "/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII"
+		"build" : "/home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug",
+		"source" : "/home/meibel/Documentos/ProyectoI_DatosII"
 	},
 	"version" : 
 	{

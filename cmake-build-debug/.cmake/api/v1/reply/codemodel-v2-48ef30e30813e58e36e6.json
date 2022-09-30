@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,8 +43,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Client-Debug-419e41eedc3ce4f52272.json",
+					"jsonFile" : "target-Client-Debug-6fc380c7d247d81dc915.json",
 					"name" : "Client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Image_processing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Image_processing-Debug-cffdfdf85df71bf1dbfd.json",
+					"name" : "Image_processing",
 					"projectIndex" : 0
 				},
 				{
@@ -58,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII/cmake-build-debug",
-		"source" : "/home/gabrielwolf/Documents/WorkspaceProyectoI/ProyectoI_DatosII"
+		"build" : "/home/meibel/Documentos/ProyectoI_DatosII/cmake-build-debug",
+		"source" : "/home/meibel/Documentos/ProyectoI_DatosII"
 	},
 	"version" : 
 	{

@@ -6,9 +6,9 @@ find_package(OpenCV REQUIRED)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Server server.cpp)
-
 add_executable(Client client.cpp)
 
+add_executable(Image_processing Image_processing.cpp)
 
 include_directories( ${OpenCV_INCLUDE_DIRS})
 
@@ -17,3 +17,6 @@ target_link_libraries(Server ${Boost_LIBRARIES})
 
 target_link_libraries( Client ${OpenCV_LIBS})
 target_link_libraries(Client ${Boost_LIBRARIES})
+
+target_link_libraries( Image_processing ${OpenCV_LIBS})
+target_link_libraries( Image_processing ${Boost_LIBRARIES})
